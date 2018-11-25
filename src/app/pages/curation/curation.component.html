@@ -1,0 +1,21 @@
+<div>
+  <section class="content">
+    <ul>
+      <li *ngFor="let item of items$ | async" class="CurationItem">
+        <a routerLink="/curation/{{item.groupId._id}}" routerLinkActive="active">
+          <article>
+            <img src="{{item.mainImage.url}}">
+            <div class="CurationItem__figcaption">
+              <h5>{{item.title}}</h5>
+              <p>
+                <strong>기획전</strong>
+                <b> | </b>
+                {{item.groupId.description}}
+              </p>
+            </div>
+          </article>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>

@@ -1,5 +1,20 @@
-<div>
-  <hedaer>
-    
-  </hedaer>
+<div class="header">
+  <div class="header-inner">
+      <header class="PageHeader__wrapper">
+        <div class="PageHeader--left">
+          <a routerLink="/" routerLinkActive="active">
+            <i class="icon icon-ddocdoc-bi"></i>
+          </a>
+        </div>
+        <div class="PageHeader--right">
+          <a routerLink="/search" routerLinkActive="active">
+            <i class="icon icon-search"></i>
+          </a>
+          <a routerLink="/bookmark" routerLinkActive="active">
+            <i class="icon icon-heart-empty"></i>
+          </a>
+        </div>
+      </header>
+      <app-gnb></app-gnb>
+  </div>
 </div>

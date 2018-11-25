@@ -1,0 +1,30 @@
+.header {
+    background: #fff;
+    .header-inner {
+        .PageHeader__wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .PageHeader--left {
+                width: 86px;
+                padding: 12px 0 0 16px;
+            }
+
+            .PageHeader--right {
+                a .icon.icon-search,
+                a .icon.icon-heart-empty {
+                    padding-top: 15px;
+                    padding-left: 9px;
+                }
+
+                a .icon.icon-search {
+                    width: 40px;
+                }
+
+                a .icon.icon-heart-empty {
+                    padding-right: 19px;
+                }
+            }
+        }
+    }
+}

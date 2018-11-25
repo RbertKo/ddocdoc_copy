@@ -1,0 +1,62 @@
+.CurationItem {
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .CurationItem__figcaption {
+        background: #fff;
+        font-size:12px;
+
+        h5 {
+            color:#212529;
+            font-weight:700;
+            font-size:14px
+        }
+
+        strong {
+            font-weight:400;
+            color:#f56a6b
+        }
+
+        p {
+            margin:0;
+            color:#666;
+
+            b {
+                font-weight:400;
+                 color:#ccc
+            }
+        }
+    }
+}
+
+@media screen and (max-width:719px){
+    .CurationItem__figcaption{
+        padding:11px 16px 9px;
+        margin-bottom:8px;
+
+        *{
+            margin: 0;
+        }
+
+        h5 {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media screen and (min-width:720px){
+    .CurationItem__figcaption{
+        padding:18px 30px 16px;
+        border-bottom:1px solid #ddd;
+
+        *{
+            margin: 0;
+        }
+        
+        h5 {
+            margin-bottom: 7px;
+        }
+    }
+}

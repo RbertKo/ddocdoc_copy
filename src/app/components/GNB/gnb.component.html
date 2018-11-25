@@ -1,0 +1,42 @@
+<nav class="GNB__wrapper">
+  <ul class="GNB__list">
+    <li class="GNB__item" routerLinkActive="GNB__item--active" [routerLinkActiveOptions]="{exact:
+      true}">
+      <div>
+        <a routerLink="/">
+          <span>홈</span>
+        </a>
+      </div>
+    </li>
+    <li class="GNB__item" routerLinkActive="GNB__item--active">
+      <div>
+        <a routerLink="/pop">
+          <span>인기</span>
+        </a>
+      </div>
+    </li>
+    <li class="GNB__item" routerLinkActive="GNB__item--active">
+      <div>
+        <a routerLink="/new">
+          <span>신규</span>
+        </a>
+      </div>
+    </li>
+    <li class="GNB__item" routerLinkActive="GNB__item--active">
+      <div>
+        <a routerLink="/category/list">
+          <span>시술별</span>
+        </a>
+      </div>
+    </li>
+    <li class="GNB__item" routerLinkActive="GNB__item--active">
+      <div>
+        <div class="icon icon-curation-new-badge">
+        </div>
+        <a routerLink="/curation">
+          <span>기획전</span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</nav>

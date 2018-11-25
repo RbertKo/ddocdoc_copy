@@ -1,0 +1,50 @@
+.Footer-inner {
+    background: #f0f0f0;
+    padding: 22px 16px; 
+
+    .Footer__bi--link {
+        margin: 0;
+        margin-bottom: 6px;
+    }
+
+    .Footer__link {
+        padding : 0;
+        margin: 0;
+        font-size: 12px;
+
+        a {
+            padding:6px 8px
+        }
+
+        li {
+            display: inline-block;
+            color:#868e95;
+        }
+
+        li:first-child a {
+            padding-left: 0;
+        }
+    }
+
+    .Footer__copyright {
+        font-size:11px;
+        color:#adb5be
+    }
+}
+
+@media screen and (min-width:720px) {
+    .Footer-inner {
+        text-align: center;
+
+        .Footer__copyright, li {
+            font-size: 14px;
+        }
+
+        .Footer__copyright {
+            margin-top: 5px;
+            display: block;
+        }
+    }
+}
+
+    

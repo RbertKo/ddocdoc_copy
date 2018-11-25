@@ -1,1 +1,565 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+    background-color:#f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.content,.header .header-inner{
+    max-width:720px;
+    margin:0 auto
+}
+
+.icon{
+    display:inline-block;
+    position:relative;
+    line-height:1;
+    vertical-align:top
+}
+.icon:before{
+    content:" ";
+    display:block;
+    background-image:url(https://event.ddocdoc.com/static/sprite/sprite.png?v=8.2.5);
+    background-size:658.3333333333334px 555.6666666666666px
+}
+.icon.mobile,.sr-only{
+    display:none
+}
+.icon.icon-cate-body.active:before{
+    background-position:-449px -334.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-body:before{
+    background-position:0 -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-couple.active:before{
+    background-position:-100px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-couple:before{
+    background-position:-50px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-etc.active:before{
+    background-position:-350px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-etc:before{
+    background-position:-300px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-eye.active:before{
+    background-position:-250px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-eye:before{
+    background-position:-200px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-eyemolding.active:before{
+    background-position:-498px -334.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-eyemolding:before{
+    background-position:-547px -334.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-hair.active:before{
+    background-position:-596px -334.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-hair:before{
+    background-position:-49px -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-nose.active:before{
+    background-position:-98px -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-nose:before{
+    background-position:-147px -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-petit.active:before{
+    background-position:-196px -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-petit:before{
+    background-position:-245px -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-skin.active:before{
+    background-position:-294px -384.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-skin:before{
+    background-position:-400px -334.6666666666667px;
+    width:48px;
+    height:48px
+}
+.icon.icon-cate-teeth.active:before{
+    background-position:-150px -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-cate-teeth:before{
+    background-position:0 -334.6666666666667px;
+    width:49px;
+    height:49px
+}
+.icon.icon-caret-down:before{
+    background-position:-567px -312.6666666666667px;
+    width:12px;
+    height:7px
+}
+.icon.icon-caret-gray-e:before{
+    background-position:-378px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-caret-md-down:before{
+    background-position:-649px -219.66666666666666px;
+    width:8px;
+    height:6px
+}
+.icon.icon-caret-page-back:before{
+    background-position:-645px -334.6666666666667px;
+    width:12px;
+    height:20px
+}
+.icon.icon-caret-page-next:before{
+    background-position:-649px -182.66666666666666px;
+    width:9px;
+    height:14px
+}
+.icon.icon-caret-page-prev:before{
+    background-position:-649px -167.66666666666666px;
+    width:9px;
+    height:14px
+}
+.icon.icon-caret-page-sm-next:before{
+    background-position:-649px -197.66666666666666px;
+    width:6px;
+    height:10px
+}
+.icon.icon-caret-page-sm-prev:before{
+    background-position:-649px -208.66666666666666px;
+    width:6px;
+    height:10px
+}
+.icon.icon-caret-w:before{
+    background-position:-393.3333333333333px -485.6666666666667px;
+    width:11px;
+    height:18px
+}
+.icon.icon-caret-white-next:before{
+    background-position:-395px -458.6666666666667px;
+    width:10px;
+    height:16px
+}
+.icon.icon-caret-white-prev:before{
+    background-position:-406px -458.6666666666667px;
+    width:10px;
+    height:16px
+}
+.icon.icon-certification-mark-large:before{
+    background-position:-567px -287.6666666666667px;
+    width:82px;
+    height:24px
+}
+.icon.icon-certification-mark:before{
+    background-position:-110px -433.6666666666667px;
+    width:68px;
+    height:20px
+}
+.icon.icon-checked:before{
+    background-position:-328px -325.6666666666667px;
+    width:13px;
+    height:8px
+}
+.icon.icon-close-circle:before{
+    background-position:-447px -433.6666666666667px;
+    width:14px;
+    height:14px
+}
+.icon.icon-close-md:before{
+    background-position:-170px -458.6666666666667px;
+    width:18px;
+    height:18px
+}
+.icon.icon-close-white:before{
+    background-position:-646px -403.3333333333333px;
+    width:12px;
+    height:12px
+}
+.icon.icon-close:before{
+    background-position:-462px -433.6666666666667px;
+    width:14px;
+    height:14px
+}
+.icon.icon-complete-popup-banner-insider:before{
+    background-position:0 0;
+    width:329.3333333333333px;
+    height:166.66666666666666px
+}
+.icon.icon-complete-popup-banner-new:before{
+    background-position:-330.3333333333333px 0;
+    width:328px;
+    height:166px
+}
+.icon.icon-complete-popup-banner:before{
+    background-position:0 -167.66666666666666px;
+    width:327px;
+    height:166px
+}
+.icon.icon-complete-popup-close-btn:before{
+    background-position:-372.6666666666667px -485.6666666666667px;
+    width:19.666666666666668px;
+    height:19.666666666666668px
+}
+.icon.icon-complete-popup-more-btn-bg:before{
+    background-position:-328px -240.66666666666666px;
+    width:84px;
+    height:84px
+}
+.icon.icon-complete-popup-next-btn:before{
+    background-position:-645px -355.6666666666667px;
+    width:11.666666666666666px;
+    height:17.666666666666668px
+}
+.icon.icon-complete-popup-prev-btn:before{
+    background-position:-646px -384.6666666666667px;
+    width:11.666666666666666px;
+    height:17.666666666666668px
+}
+.icon.icon-curation-new-badge:before{
+    background-position:-310px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-ddocdoc-bi-gray:before{
+    background-position:-361px -433.6666666666667px;
+    width:48px;
+    height:16px
+}
+.icon.icon-ddocdoc-bi:before{
+    background-position:-45px -458.6666666666667px;
+    width:58px;
+    height:21px
+}
+.icon.icon-ddocdoc-logo:before{
+    background-position:-636px -240.66666666666666px;
+    width:21px;
+    height:21px
+}
+.icon.icon-heart-blue:before{
+    background-position:-33px -485.6666666666667px;
+    width:32px;
+    height:29px
+}
+.icon.icon-heart-empty:before{
+    background-position:-104px -458.6666666666667px;
+    width:22px;
+    height:19px
+}
+.icon.icon-heart-fill:before{
+    background-position:-127px -458.6666666666667px;
+    width:22px;
+    height:19px
+}
+.icon.icon-heart-sm-fill:before{
+    background-position:-505.6666666666667px -433.6666666666667px;
+    width:14px;
+    height:12px
+}
+.icon.icon-hotdeal-bi:before{
+    background-position:0 -518.6666666666666px;
+    width:23px;
+    height:37px
+}
+.icon.icon-kakaotalk:before{
+    background-position:-226.66666666666666px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-like-best:before{
+    background-position:-45px -433.6666666666667px;
+    width:64px;
+    height:24px
+}
+.icon.icon-notfound:before{
+    background-position:-413px -240.66666666666666px;
+    width:80px;
+    height:80px
+}
+.icon.icon-plus-white:before{
+    background-position:-327px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-refresh:before{
+    background-position:-293px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-safe-care-badge:before{
+    background-position:-179px -433.6666666666667px;
+    width:67px;
+    height:16px
+}
+.icon.icon-safe-care-close-btn:before{
+    background-position:-276px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-safe-care-logo:before{
+    background-position:0 -433.6666666666667px;
+    width:44px;
+    height:51px
+}
+.icon.icon-safe-care-question-btn:before{
+    background-position:-344px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-search:before{
+    background-position:-150px -458.6666666666667px;
+    width:19px;
+    height:19px
+}
+.icon.icon-share:before{
+    background-position:-189px -458.6666666666667px;
+    width:18px;
+    height:18px
+}
+.icon.icon-sns-facebook:before{
+    background-position:-388px -384.6666666666667px;
+    width:44px;
+    height:44px
+}
+.icon.icon-sns-kakaostory:before{
+    background-position:-433px -384.6666666666667px;
+    width:44px;
+    height:44px
+}
+.icon.icon-sns-kakaotalk:before{
+    background-position:-478px -384.6666666666667px;
+    width:44px;
+    height:44px
+}
+.icon.icon-sns-link:before{
+    background-position:-523px -384.6666666666667px;
+    width:44px;
+    height:44px
+}
+.icon.icon-top-alt:before{
+    background-position:-410px -433.6666666666667px;
+    width:36px;
+    height:14px
+}
+.icon.icon-top:before{
+    background-position:-636px -262.6666666666667px;
+    width:21px;
+    height:20px
+}
+.icon.icon-trend:before{
+    background-position:-247px -433.6666666666667px;
+    width:64px;
+    height:16px
+}
+.icon.icon-btrend-btn-close:before{
+    background-position:-351.6666666666667px -485.6666666666667px;
+    width:20px;
+    height:20px
+}
+.icon.icon-btrend-logo:before{
+    background-position:-494px -240.66666666666666px;
+    width:96px;
+    height:46px
+}
+.icon.icon-btrend-search-hand:before{
+    background-position:-66px -485.6666666666667px;
+    width:34.666666666666664px;
+    height:26px
+}
+.icon.icon-badge-pink-triangle:before{
+    background-position:-653px -226.66666666666666px;
+    width:3px;
+    height:3px
+}
+.icon.icon-badge-purple-triangle:before{
+    background-position:-649px -226.66666666666666px;
+    width:3px;
+    height:3px
+}
+.icon.icon-btn-arrow-right-pink:before{
+    background-position:-208px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-btn-reset-pink:before{
+    background-position:-101.66666666666667px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-dbForm-agree:before{
+    background-position:-477px -433.6666666666667px;
+    width:13.666666666666666px;
+    height:13px
+}
+.icon.icon-dbForm-arrow:before{
+    background-position:-580px -312.6666666666667px;
+    width:10.333333333333334px;
+    height:5.333333333333333px
+}
+.icon.icon-dbForm-disagree:before{
+    background-position:-491.6666666666667px -433.6666666666667px;
+    width:13px;
+    height:13px
+}
+.icon.icon-dbForm-select-arrow:before{
+    background-position:-613px -417.6666666666667px;
+    width:13.666666666666666px;
+    height:8.333333333333334px
+}
+.icon.icon-direct-banner:before{
+    background-position:-328px -167.66666666666666px;
+    width:320px;
+    height:72px
+}
+.icon.icon-eli-heart-off:before{
+    background-position:-151.66666666666666px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-eli-heart-on:before{
+    background-position:-326.6666666666667px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-eli-hospital:before{
+    background-position:-361px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-eli-pin:before{
+    background-position:-242px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-eli-safe-tag:before{
+    background-position:-312px -433.6666666666667px;
+    width:48px;
+    height:16px
+}
+.icon.icon-header-heart-black:before{
+    background-position:-126.66666666666667px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-header-logo:before{
+    background-position:-494px -287.6666666666667px;
+    width:72px;
+    height:32px
+}
+.icon.icon-header-search-black:before{
+    background-position:-301.6666666666667px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-home-arrow-left-circle:before{
+    background-position:0 -485.6666666666667px;
+    width:32px;
+    height:32px
+}
+.icon.icon-home-arrow-right-circle:before{
+    background-position:-613px -384.6666666666667px;
+    width:32px;
+    height:32px
+}
+.icon.icon-home-pop-man-off:before{
+    background-position:-251.66666666666666px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-home-pop-man-on:before{
+    background-position:-176.66666666666666px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-home-pop-woman-off:before{
+    background-position:-201.66666666666666px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-home-pop-woman-on:before{
+    background-position:-276.6666666666667px -485.6666666666667px;
+    width:24px;
+    height:24px
+}
+.icon.icon-home-rk-arrow-down:before{
+    background-position:-225px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-home-rk-arrow-up:before{
+    background-position:-259px -458.6666666666667px;
+    width:16px;
+    height:16px
+}
+.icon.icon-home-see:before{
+    background-position:-591px -240.66666666666666px;
+    width:44px;
+    height:44px
+}
+.icon.icon-home-various:before{
+    background-position:-343px -384.6666666666667px;
+    width:44px;
+    height:44px
+}
+.icon.icon-home-woman:before{
+    background-position:-568px -384.6666666666667px;
+    width:44px;
+    height:44px
+}
