@@ -56,7 +56,13 @@
     }
 }
 
-@media screen and (max-width:719px) {
+@media (max-width:576px) {
+    .GNB__wrapper .GNB__list .GNB__item a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:577px) and (max-width:719px) {
     .GNB__wrapper .GNB__list .GNB__item a {
         font-size: 16px;
     }

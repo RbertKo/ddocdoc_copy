@@ -2,7 +2,7 @@
   <section class="content">
     <ul>
       <li *ngFor="let item of items$ | async" class="CurationItem">
-        <a routerLink="/curation/{{item.groupId._id}}" routerLinkActive="active">
+        <a href="https://event.ddocdoc.com/curation/{{item.groupId._id}}">
           <article>
             <img src="{{item.mainImage.url}}">
             <div class="CurationItem__figcaption">
